@@ -627,3 +627,70 @@ img {
     column-gap: 4rem;
   }
 }
+
+
+
+/* ===== MEDIA QUERIES FOR CHROME DESKTOP MOBILE VIEW ===== */
+
+/* Targeting mobile devices in portrait mode */
+@media screen and (max-width: 375px) {
+  .home {
+    padding: 2rem 1rem; /* Adjust padding for mobile */
+    text-align: center; /* Centering text for mobile view */
+  }
+  .home__img {
+    width: 100%; /* Responsive image width */
+    max-width: 300px; /* Limit max-width for better alignment */
+    height: auto;
+  }
+  .about__container,
+  .skills__container,
+  .work__container {
+    grid-template-columns: 1fr; /* Single column layout */
+    align-items: center; /* Center items */
+  }
+  .nav__item {
+    margin-left: 0; /* Remove left margin for cleaner alignment */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+}
+
+/* Targeting tablet devices */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .home {
+    padding: 3rem 1rem; /* Adjust padding for tablet */
+    text-align: center; /* Centering text for tablet view */
+  }
+  .home__img {
+    width: 90%; /* Responsive image width */
+    max-width: 350px; /* Limit max-width for better alignment */
+    height: auto;
+  }
+  .about__container,
+  .skills__container,
+  .work__container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for tablet */
+    align-items: flex-start; /* Align items to start */
+  }
+  .nav__item {
+    margin-left: 1rem; /* Slight left margin for tablet */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+}
+
+/* Additional adjustments for small desktop/mobile view (<= 1024px) */
+@media screen and (max-width: 1024px) {
+  .home {
+    padding: 4rem 2rem; /* More padding for larger mobile views */
+  }
+  .home__img {
+    width: 80%; /* More width for larger mobile views */
+    max-width: 400px; /* Limit max-width for better alignment */
+  }
+  .about__container,
+  .skills__container,
+  .work__container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    justify-items: center; /* Center items */
+  }
+}
