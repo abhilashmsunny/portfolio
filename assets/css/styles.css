@@ -47,7 +47,9 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -85,7 +87,7 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 2.5rem;
   background-color: var(--first-color);
 }
 
@@ -416,7 +418,6 @@ img {
   main {
     padding: 8px !important;
   }
-  
 }
 
 /* For medium devices */
@@ -534,13 +535,6 @@ img {
   main {
     padding: 2rem;
   }
-  .section-title {
-    margin-bottom: var(--mb-6);
-  }
-  .section-title::after {
-    width: 80px;
-    top: 3rem;
-  }
 }
 
 /* For extra large devices */
@@ -550,13 +544,6 @@ img {
     --h2-font-size: clamp(1.5rem, 3vw, 2rem);
     --normal-font-size: clamp(0.875rem, 2vw, 1rem);
     --smaller-font-size: clamp(0.75rem, 1.5vw, 0.875rem);
-  }
-  .section-title {
-    margin-bottom: var(--mb-6);
-  }
-  .section-title::after {
-    width: 80px;
-    top: 3rem;
   }
 }
 
