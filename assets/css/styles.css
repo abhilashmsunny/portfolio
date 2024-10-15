@@ -87,7 +87,7 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2.5rem;
+  top: 2rem;
   background-color: var(--first-color);
 }
 
@@ -545,6 +545,9 @@ img {
     --normal-font-size: clamp(0.875rem, 2vw, 1rem);
     --smaller-font-size: clamp(0.75rem, 1.5vw, 0.875rem);
   }
+  .section-title::after {
+    margin-top: 1rem !important;
+  }
 }
 
 /* 3. Add max-width to content containers */
@@ -555,4 +558,7 @@ img {
   margin-right: auto;
   padding-left: var(--mb-2);
   padding-right: var(--mb-2);
+}
+.section-title::after {
+  margin-top: 1rem !important;
 }
